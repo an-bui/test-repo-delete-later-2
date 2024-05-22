@@ -9,6 +9,12 @@ Read in packages
 library(tidyverse) # for data wrangling and plotting
 library(ggeffects) # for model predictions
 library(here) # for file pathing
+library(lterdatasampler) # for data
 ```
 
+Reading in data
+
+```{r}
+data(pie_crab) # reading in the Plum Island Ecosystem crab data
+```
 
