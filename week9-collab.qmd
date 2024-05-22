@@ -28,4 +28,21 @@ pie_crab %>%
   theme_minimal() # remove gridlines, etc
 ```
 
+How does latitude predict crab size?
+
+```{r}
+crab_model <- lm(size ~ latitude, # model formula
+                 data = pie_crab) # data set
+```
+
+Check the diagnostics!
+
+```{r}
+par(mfrow = c(2, 2)) # displays diagnostics in a 2x2 grid
+plot(crab_model) # plots diagnostic plots
+```
+
+We see: *homoscedastic residuals* (constant variance of residuals across the range of fitted = model predictions), *normally distributed residuals* (residuals follow the reference line in the QQ plot), *don't see outliers* (no points outside the dashed lines in the residuals vs leverage plot)
+
+
 
