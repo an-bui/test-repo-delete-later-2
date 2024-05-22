@@ -1,0 +1,14 @@
+---
+title: "Week 9 collaboration doc"
+format: html
+---
+
+Read in packages
+
+```{r}
+library(tidyverse) # for data wrangling and plotting
+library(ggeffects) # for model predictions
+library(here) # for file pathing
+```
+
+
