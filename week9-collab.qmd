@@ -44,5 +44,14 @@ plot(crab_model) # plots diagnostic plots
 
 We see: *homoscedastic residuals* (constant variance of residuals across the range of fitted = model predictions), *normally distributed residuals* (residuals follow the reference line in the QQ plot), *don't see outliers* (no points outside the dashed lines in the residuals vs leverage plot)
 
+Look at the summary of our model!
 
+```{r}
+summary(crab_model) # look at model output
+```
 
+- slope = 0.49 plus minus 0.034
+- y-intercept = -3.62 plus minus 1.27
+- for each 1 degree increase in latitude, we expect an increase in crab size of 0.49 plus minus 0.034 mm
+
+Model statistics: model statistics: (F(1, 390) = 208.5, p < 0.001, alpha = 0.05, R^2^ = 0.35)
